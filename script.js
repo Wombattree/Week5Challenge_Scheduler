@@ -71,12 +71,8 @@ function SaveEvent()
         if (eventSlots[i].eventTime == liTime)
         {
             let eventText = $(listElement).children("input").val();
-            if (eventText.length > 0)
-            {
-                eventSlots[i].eventText = eventText;
-                localStorage.setItem("eventSlots", JSON.stringify(eventSlots));
-            }
-            else console.log("Empty");
+            eventSlots[i].eventText = eventText;
+            localStorage.setItem("eventSlots", JSON.stringify(eventSlots));
         }
     }
 }
