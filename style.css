@@ -1,0 +1,110 @@
+:root
+{
+  --pastColour: rgb(75, 75, 82);
+  --presentColour: #4ea4b0;
+  --futureColour: rgb(30, 123, 154);
+
+  --bodyColour: rgb(32, 32, 35);
+  --blueColour: rgb(15, 59, 74);
+  --lightBlueColour: rgb(22, 89, 112);
+  --veryLightBlueColour: rgb(31, 123, 154);
+
+  --textColour: #dddddd;
+  --fadedTextColour: grey;
+
+  --slotHeight: 80px;
+
+  background-color: var(--bodyColour);
+}
+
+body
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background-color: var(--bodyColour);
+  color: var(--textColour);
+}
+
+.jumbotron 
+{
+  text-align: center;
+  background-color: var(--bodyColour);
+  border-radius: 0;
+}
+
+#timeBlockList
+{
+  list-style: none;
+}
+
+.timeBlock
+{
+  text-align: center;
+  margin: 0.5% 15% 0.5% 10%;
+  height: var(--slotHeight);
+}
+
+.timeBlockLabel
+{
+  line-height: var(--slotHeight);
+  background-color: var(--blueColour);
+  border-radius: 15px 0px 0px 15px;
+  user-select: none;
+}
+
+input
+{
+  border: none;
+}
+
+.timeBlockDisplay
+{
+  z-index: 2;
+  color: var(--textColour);
+}
+
+.timeBlockSave
+{
+  line-height: var(--slotHeight);
+  background-color: var(--blueColour);
+  border-radius: 0px 15px 15px 0px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.timeBlockSave:hover
+{
+  transition: all 0.2s ease-in-out;
+  background-color: var(--lightBlueColour);
+}
+
+.timeBlockSave:active
+{
+  transition: all 0.1s ease-in-out;
+  background-color: var(--veryLightBlueColour);
+}
+
+.past 
+{
+  background-color: var(--pastColour);
+}
+
+.present 
+{
+  background-color: var(--presentColour);
+}
+
+.future 
+{
+  background-color: var(--futureColour);
+}
+
+.saveBtn 
+{
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
